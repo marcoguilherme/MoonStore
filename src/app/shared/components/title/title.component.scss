@@ -1,0 +1,37 @@
+@import '../../../../assets/scss/partials/colors.partial';
+
+@mixin titleContainer {
+    display: inline;
+    padding: 4px 16px;
+    border-radius: 50px;
+}
+
+.app-title {
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    :host ::ng-deep &__content--primary {
+        h1, h2, h3, h4, h5, h6 {
+            background-color: $primary;
+            color: $base-color-primary-lighter-1;
+            @include titleContainer();
+        }
+        strong {
+            color: $secondary;
+        }
+    }
+
+    :host ::ng-deep &__content--secondary {
+        h1, h2, h3, h4, h5, h6 {
+            background-color: $secondary;
+            color: $base-color-primary-lighter-1;
+            @include titleContainer();
+        }
+        strong {
+            color: $primary;
+        }
+    }
+
+}    
+
+

@@ -1,0 +1,19 @@
+@import '../../../assets/scss/partials/colors.partial';
+
+.header {
+    display: flex;
+    height: 100px;
+    flex: 1;
+    background-color: $primary;
+    
+    &__container {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding: 16px;
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,15 @@
+@import '../../../assets/scss/partials/colors.partial';
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $base-color-secondary;
+    padding: 16px;
+    height: 100px;
+    
+    p {
+        color: $base-color-primary;
+        text-align: center;
+    }
+}
