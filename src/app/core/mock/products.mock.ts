@@ -34,4 +34,4 @@ export default [
         category: 'Computer Supply',
         rating: 4
     }
-]
+];
