@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-store": {
+    "moon-store": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-store",
+            "outputPath": "dist/moon-store",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-store:build"
+            "browserTarget": "moon-store:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-store:build:production"
+              "browserTarget": "moon-store:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-store:build"
+            "browserTarget": "moon-store:build"
           }
         },
         "test": {
@@ -100,15 +100,11 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
             ]
           }
         },
@@ -116,16 +112,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-store:serve"
+            "devServerTarget": "moon-store:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-store:serve:production"
+              "devServerTarget": "moon-store:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "angular-store"
+  "defaultProject": "moon-store"
 }
