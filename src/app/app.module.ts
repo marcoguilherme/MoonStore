@@ -18,6 +18,6 @@ import { HeaderModule } from './core/header/header.module';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
+export class AppModule {
 
 }

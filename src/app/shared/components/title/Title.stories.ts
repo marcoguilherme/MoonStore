@@ -32,9 +32,9 @@ const Template: Story = (args) => ({
 			</app-title-content>
 		</app-title>
 	`
-})
+});
 
 export const Default = Template.bind({});
 Default.args = {
 	color: 'primary'
-}
+};

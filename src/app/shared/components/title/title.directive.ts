@@ -17,7 +17,6 @@ export class TitleContentDirective {
     @HostBinding('class.app-title__content--secondary') secondary;
 
     @Input() set appTitleDirective(value){
-        console.log(value)
         if(value === 'primary'){
             this.primary = true;
             this.secondary = false;
@@ -26,5 +25,4 @@ export class TitleContentDirective {
             this.secondary = true;
         }
     }
-
 }
