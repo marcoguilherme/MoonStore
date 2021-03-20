@@ -4,6 +4,7 @@
     "codelyzer"
   ],
   "rules": {
+    "indent": ["error", 2],
     "align": {
       "options": [
         "parameters",
